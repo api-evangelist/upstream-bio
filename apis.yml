@@ -1,8 +1,19 @@
 aid: upstream-bio
 name: Upstream Bio
-description: 'Upstream Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Upstream Bio is a clinical-stage biotechnology company headquartered at 460 Totten Pond Road in
+  Waltham, Massachusetts, founded in 2021 and listed on Nasdaq as UPB since its October 2024 IPO. The
+  company develops treatments for inflammatory disease with an initial focus on severe respiratory
+  disorders, and its strategy is built around a single lead asset: verekitug (UPB-101), described by
+  the company as the only known antagonist in clinical development that targets the receptor for
+  thymic stromal lymphopoietin (TSLP). Verekitug has been advanced into Phase 2 studies in severe
+  asthma, chronic rhinosinusitis with nasal polyps (CRSwNP) and chronic obstructive pulmonary disease
+  (COPD), with a Phase 3 development strategy announced in 2026. Upstream Bio is a therapeutics
+  developer rather than a software vendor: upstreambio.com is a fourteen-page WordPress marketing
+  site, investor material is served from a hosted Q4-style investor-relations subdomain, and the
+  company publishes no developer program, no public API, no SDK and no machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/upstream-bio/refs/heads/main/apis.yml
+image: https://upstreambio.com/wp-content/uploads/2026/08/upstream-bio-social-image.jpg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +23,15 @@ created: '2026-09-02'
 modified: '2026-09-02'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Healthcare
+- Immunology
+- Respiratory
+- Clinical Trials
+- Drug Development
+- Nasdaq
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,64 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/upstream-bio-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/upstream-bio_stock/
+  url: https://upstreambio.com/
+- type: About
+  url: https://upstreambio.com/about/
+- type: Blog
+  url: https://investors.upstreambio.com/news-events/news-releases
+- type: BlogRSS
+  url: https://upstreambio.com/feed/
+- type: Support
+  url: https://investors.upstreambio.com/shareholder-services/contact-us
+- type: PrivacyPolicy
+  url: https://upstreambio.com/privacy-policy/
+- type: TermsOfService
+  url: https://upstreambio.com/terms/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/upstreambio
+- type: InvestorRelations
+  url: https://investors.upstreambio.com/
+- type: LLMsTxt
+  url: llms/upstream-bio-llms.txt
+x-enrichment:
+  date: '2026-09-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Upstream Bio is a Nasdaq-listed clinical-stage drug developer whose product is a single
+    therapeutic program (verekitug, an anti-TSLP-receptor antibody in Phase 2/3); upstreambio.com is
+    a fourteen-page WordPress marketing site with no /developers, /docs or /api path at all, the
+    investor material lives on a hosted IR subdomain, and the only machine-readable endpoints on
+    either host are the CMS defaults — an RSS feed, a Yoast sitemap, and WordPress core's
+    undocumented, noindexed /wp-json/ route index — rather than any published product API.
+  evidence:
+  - url: https://upstreambio.com/
+    status: 200
+  - url: https://upstreambio.com/openapi.json
+    status: 404
+  - url: https://upstreambio.com/swagger.json
+    status: 404
+  - url: https://upstreambio.com/graphql
+    status: 404
+  - url: https://upstreambio.com/llms.txt
+    status: 404
+  - url: https://upstreambio.com/.well-known/api-catalog
+    status: 404
+  - url: https://upstreambio.com/.well-known/agent-card.json
+    status: 404
+  - url: https://upstreambio.com/.well-known/agent.json
+    status: 404
+  - url: https://investors.upstreambio.com/llms.txt
+    status: 404
+  - url: https://investors.upstreambio.com/.well-known/api-catalog
+    status: 404
+  - url: https://upstreambio.com/wp-json/
+    status: 200
+  checked: '2026-09-02'

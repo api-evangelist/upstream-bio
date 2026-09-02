@@ -1,0 +1,68 @@
+generated: '2026-09-02'
+method: probed
+source: https://upstreambio.com/ + https://investors.upstreambio.com/
+name: Upstream Bio well-known probe
+description: >-
+  Named-path probe of the RFC 8615 /.well-known/ namespace on both Upstream Bio hosts. Every path
+  probed returned 404 (the WordPress theme 404 on upstreambio.com, the Drupal/Q4 404 on the
+  investor-relations host) or a 403 edge bot-block. No well-known document is served, so no
+  WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a verified absence.
+hosts:
+- host: upstreambio.com
+  note: >-
+    WordPress site fronted by WP Engine. /.well-known/security.txt returns the nginx 404 page; the
+    other paths are absorbed by the WordPress rewrite and return the theme's own 404 document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: investors.upstreambio.com
+  note: >-
+    Hosted investor-relations platform behind an Akamai-style edge. Requests carrying only a bare
+    user-agent are answered with a 403 "Access Denied" page; re-probed with a browser user-agent and
+    Accept/Accept-Language headers the site returns 200 for real pages and 404 for the well-known
+    paths. The 403 rows below are the edge policy, not evidence of a served document — neither
+    status carries a well-known document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+x-evidence:
+  checked: '2026-09-02'
+  user_agent: >-
+    Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko)
+    Chrome/128.0 Safari/537.36
+  robots_txt:
+    url: https://upstreambio.com/robots.txt
+    status: 200
+    note: 'Yoast-generated; User-agent: * Disallow: (empty) with Crawl-delay: 10 and a sitemap pointer.'

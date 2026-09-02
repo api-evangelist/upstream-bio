@@ -1,0 +1,22 @@
+generated: '2026-09-02'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: upstreambio.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov  8 03:24:42 2026 GMT
+  hsts: false
+domains:
+- domain: upstreambio.com
+  dnssec: false
+  caa: []
+  caa_note: >-
+    The first probe timed out; a re-query on 2026-09-02 returned cleanly with no CAA record set.
+    Absence of CAA is the finding, not a failed probe.
+  nameservers:
+  - ns27.domaincontrol.com.
+  - ns28.domaincontrol.com.
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
