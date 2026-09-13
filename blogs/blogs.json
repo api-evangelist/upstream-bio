@@ -11,8 +11,15 @@
     {
       "source": "https://investors.upstreambio.com/news-events/news-releases",
       "error": "TimeoutError"
+    },
+    {
+      "source": "https://upstreambio.com/feed/",
+      "feed_url": "https://upstreambio.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-09-06T19:17:18Z"
+  "post_count": 10,
+  "fetched": "2026-09-13T13:00:00Z"
 }
