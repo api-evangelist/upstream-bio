@@ -31,6 +31,17 @@ tags:
 - Respiratory
 - Clinical Trials
 - Drug Development
+- NASDAQ
+tags_raw:
+- Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Healthcare
+- Immunology
+- Respiratory
+- Clinical Trials
+- Drug Development
 - Nasdaq
 apis: []
 maintainers:
