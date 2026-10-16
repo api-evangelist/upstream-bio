@@ -2,15 +2,8 @@
   "repo": "upstream-bio",
   "feeds": [
     {
-      "source": "https://upstreambio.com/about/",
-      "feed_url": "https://upstreambio.com/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
-    },
-    {
       "source": "https://investors.upstreambio.com/news-events/news-releases",
-      "error": "TimeoutError"
+      "error": "HTTPError"
     },
     {
       "source": "https://upstreambio.com/feed/",
@@ -21,5 +14,5 @@
     }
   ],
   "post_count": 10,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
