@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Upstream Bio is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/upstream-bio_stock/
+Upstream Bio is a clinical-stage biotechnology company headquartered at 460 Totten Pond Road in Waltham, Massachusetts, founded in 2021 and listed on Nasdaq as UPB since its October 2024 IPO. The company develops treatments for inflammatory disease with an initial focus on severe respiratory disorders, and its strategy is built around a single lead asset: verekitug (UPB-101), described by the company as the only known antagonist in clinical development that targets the receptor for thymic stromal lymphopoietin (TSLP). Verekitug has been advanced into Phase 2 studies in severe asthma, chronic rhinosinusitis with nasal polyps (CRSwNP) and chronic obstructive pulmonary disease (COPD), with a Phase 3 development strategy announced in 2026. Upstream Bio is a therapeutics developer rather than a software vendor: upstreambio.com is a fourteen-page WordPress marketing site, investor material is served from a hosted Q4-style investor-relations subdomain, and the company publishes no developer program, no public API, no SDK and no machine-readable API contract.
+
+**Areas:** Company · Biotechnology · Pharmaceuticals · Life Sciences · Healthcare · Immunology · Respiratory · Clinical Trials · Drug Development · NASDAQ
+
+## Upstream Bio on APIs.io
+
+Everything profiled for Upstream Bio is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/upstream-bio/](https://apis.io/providers/upstream-bio/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Upstream Bio Domain Security](https://apis.io/security/upstream-bio/upstream-bio-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://upstreambio.com/)
+- [Support](https://investors.upstreambio.com/shareholder-services/contact-us)
+- [Blog](https://investors.upstreambio.com/news-events/news-releases)
+- [Terms of service](https://upstreambio.com/terms/)
+- [Privacy policy](https://upstreambio.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 9.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 3.6 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/upstream-bio/](https://apis.io/providers/upstream-bio/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Upstream Bio: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/upstream-bio/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
